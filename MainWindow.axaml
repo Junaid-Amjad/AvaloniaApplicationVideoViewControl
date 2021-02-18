@@ -1,0 +1,59 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:v="using:LibVLCSharp.Avalonia"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaApplicationWithControls.MainWindow"
+        Title="AvaloniaApplicationWithControls">
+  <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible">
+  
+  <Grid Margin="4">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="300" />
+      <ColumnDefinition Width="300" />
+      <ColumnDefinition Width="300" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <!--
+    <Image Source="resm:Avalonia.Skia.Assets.NoiseAsset_256X256_PNG.png?assembly=Avalonia.Skia" Grid.Column="0" Grid.Row="0" />
+    -->
+    <v:VideoView Name="Video2" Grid.Column="0" Grid.Row="0" />
+    <!--<v:VideoView x:Name="VideoView" Name="Video1" Width="200" Height="500" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="0">
+
+      </v:VideoView>-->
+      <StackPanel Orientation="Horizontal"  Spacing="5" VerticalAlignment="Bottom" Grid.Column="0" Grid.Row="1" >
+        <Button Content="PLAY" Height="25" Width="50" VerticalAlignment="Bottom" HorizontalAlignment="Left" Click="PlayButtonsecond_Click" />
+        <Button Content="STOP" Height="25" Width="50" VerticalAlignment="Bottom" HorizontalAlignment="Left" Click="StopButtonsecond_Click" />
+        <Button Content="Pause" Height="25" Width="50" VerticalAlignment="Bottom" HorizontalAlignment="Left" Click="PauseButtonsecond_Click" />
+      </StackPanel>
+    <v:VideoView Name="Video1" Grid.Column="1" Grid.Row="0" Margin="0,0,0,0" />
+    <!--    <Image Source="resm:Avalonia.Skia.Assets.NoiseAsset_256X256_PNG.png?assembly=Avalonia.Skia" Grid.Column="1" Grid.Row="0" />
+    --><!--
+     <v:VideoView  Name="Video2" Height="500" Width="200" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="0">
+       
+    </v:VideoView>-->
+    
+    <StackPanel Orientation="Horizontal" x:Name="test" Spacing="5" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="1" >
+            <Button Content="PLAY" Height="25" Width="50" VerticalAlignment="Bottom" HorizontalAlignment="Left" Click="PlayButton_Click" />
+            <Button Content="STOP" Height="25" Width="50" VerticalAlignment="Bottom" HorizontalAlignment="Left" Click="StopButton_Click" />
+            <Button Content="Pause" Height="25" Width="50" VerticalAlignment="Bottom" HorizontalAlignment="Left" Click="PauseButton_Click" />
+    </StackPanel>
+
+    <v:VideoView Name="Video3" Grid.Column="2" Grid.Row="0" />
+    <!--<v:VideoView x:Name="VideoView" Name="Video1" Width="200" Height="500" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="3" Grid.Row="0">
+
+      </v:VideoView>-->
+    <StackPanel Orientation="Horizontal"  Spacing="5" VerticalAlignment="Bottom" Grid.Column="2" Grid.Row="1" >
+      <Button Content="PLAY" Height="25" Width="50" VerticalAlignment="Bottom" HorizontalAlignment="Left" Click="PlayButtonthird_Click" />
+      <Button Content="STOP" Height="25" Width="50" VerticalAlignment="Bottom" HorizontalAlignment="Left" Click="StopButtonthird_Click" />
+      <Button Content="Pause" Height="25" Width="50" VerticalAlignment="Bottom" HorizontalAlignment="Left" Click="PauseButtonthird_Click" />
+    </StackPanel>
+    
+    
+  </Grid>
+  </ScrollViewer>
+</Window>
